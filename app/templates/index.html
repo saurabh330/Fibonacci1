@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <section class="fibonacci-ui">
+        <div class="container">
+            <form method="GET">
+                <input type="search" placeholder="Enter Number for Fibonacci" name="value">
+                <button>Check</button>
+            </form>
+            <div>
+                <p>The {{numeric}} placeholder in Fibonacci Sequence is : {{output}}</p>
+                <br/>
+                <p> Time Taken to compute: {{latency}} ms</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
